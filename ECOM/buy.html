@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>GlobalCart Assist | BuynShip for You</title>
+  <!-- Google Fonts & simple reset -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylez.css">
+  <link rel="javascript" href="Scripts.js">
+</head>
+<body>
+  <!-- HEADER / NAVIGATION (including hero section) -->
+  <header class="hero-section" id="home">
+    <div class="container nav-container">
+      <div class="logo">
+        <h2>🛒 GlobalCart Assist</h2>
+        <p class="tagline">Your bridge to eBay & Alibaba</p>
+      </div>
+      <nav class="navbar" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#location" class="nav-link">Location</a></li>
+          <li><a href="#feedback" class="nav-link">Feedback</a></li>
+        </ul>
+        <div class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero content (call to action) -->
+    <div class="hero-content container">
+      <h1>We buy & ship what you love</h1>
+      <p>Struggling with eBay, Alibaba, or other e‑commerce platforms? Let our experts handle everything — from product search to global delivery.</p>
+      <button class="btn-primary cta-btn" id="heroCtaBtn">Start Free Consultation →</button>
+    </div>
+  </header>
+
+  <main class="main-body">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Who we are</span>
+          <h2>Making e‑commerce easy for everyone</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Many individuals and small business owners miss great deals on eBay and Alibaba simply because the platforms feel overwhelming. <strong>GlobalCart Assist</strong> eliminates the complexity. We search, negotiate, purchase, and ship directly to your doorstep.</p>
+            <ul class="feature-list">
+              <li>✓ No account needed on eBay/Alibaba</li>
+              <li>✓ Consolidated shipping & customs assistance</li>
+              <li>✓ Personal shopper for any product category</li>
+              <li>✓ Real-time order tracking updates</li>
+            </ul>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-target="1250">15</span>
+              <span class="stat-label">Packages shipped</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="98">10</span>
+              <span class="stat-label">Satisfied clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="badge">What we offer</span>
+          <h2>Tailored buying & shipping solutions</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🔍</div>
+            <h3>eBay Product Sourcing</h3>
+            <p>We find the best listings, verify sellers, and handle bids or direct purchases — you just approve the final price.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🏭</div>
+            <h3>Alibaba B2B support</h3>
+            <p>From supplier communication to sample ordering and bulk negotiation, we manage the whole process.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">✈️</div>
+            <h3>International Shipping</h3>
+            <p>Consolidation, freight forwarding, and last-mile delivery. We handle customs paperwork & tracking.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🛡️</div>
+            <h3>Buyer Protection</h3>
+            <p>Quality checks before shipping, dispute management, and refund assistance in case of issues.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT + LOCATION combined row (two columns) for clean layout -->
+    <div class="contact-location-wrapper">
+      <section id="contact" class="section contact-section">
+        <div class="container contact-container">
+          <div class="contact-info">
+            <span class="badge">Get in touch</span>
+            <h2>Let’s talk about your next purchase</h2>
+            <p>Reach out for a free quote or ask us anything about buying from eBay / Alibaba.</p>
+            <ul class="contact-details">
+              <li>📧 Musuwa@BuynShip.com</li>
+              <li>📞 +26 (0) 975-036503</li>
+              <li>⏱️ Mon – Fri, 9am – 6pm (CAT)</li>
+            </ul>
+          </div>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <input type="text" id="contactName" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="contactEmail" placeholder="Email address" required>
+            </div>
+            <div class="form-group">
+              <textarea rows="3" id="contactMsg" placeholder="Tell us what you need (eBay link, product description...)"></textarea>
+            </div>
+            <button type="submit" class="btn-secondary">Send message →</button>
+            <div id="formFeedbackMsg" class="form-feedback"></div>
+          </form>
+        </div>
+      </section>
+
+      <section id="location" class="section location-section">
+        <div class="container location-container">
+          <div class="location-text">
+            <span class="badge">Our office hub</span>
+            <h2>Our Offices</h2>
+            <address>
+              <p><strong>📍 GlobalCart|BuynShip</strong><br>
+              The Copperbelt University,<br>Room Number B-236<br>
+              Kitwe,Zambia.</p>
+              <p><strong>✈️ We have Global warehouses in UK, Germany & Japan</strong> — we ship worldwide.</p>
+            </address>
+            <div class="map-placeholder">
+              <!-- interactive fake map / static look with js interaction (optional) -->
+              <div class="mini-map" id="miniMap">
+                <span>📍 Our main hub</span>
+                
+              </div>
+              <div>
+                <p>3425 Kantanta Street, Suite 402<br>
+              Kitwe,Zambia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- CUSTOMER FEEDBACK SECTION with interactive carousel / submission -->
+    <section id="feedback" class="section feedback-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="badge">Real stories</span>
+          <h2>What our clients say</h2>
+          <p>We’ve helped hundreds navigate eBay & Alibaba stress‑free</p>
+        </div>
+
+        <!-- Feedback carousel / slider -->
+        <div class="feedback-carousel">
+          <button class="carousel-btn prev-btn" aria-label="Previous">❮</button>
+          <div class="carousel-track-container">
+            <div class="carousel-track" id="carouselTrack">
+              <div class="feedback-card">
+                <p class="feedback-text">"I had no idea how Alibaba worked. GlobalCart Assist handled everything from sourcing to delivery. Saved me 40% on bulk orders!"</p>
+                <h4>— Bupe T.</h4>
+                <span>Small business owner</span>
+              </div>
+              <div class="feedback-card">
+                <p class="feedback-text">"eBay auctions always confused me. Their team bid and won a vintage camera for me at an amazing price. Shipping was super fast."</p>
+                <h4>— Linda K.</h4>
+                <span>Collector</span>
+              </div>
+              <div class="feedback-card">
+                <p class="feedback-text">"Reliable, transparent pricing. They consolidated multiple eBay purchases into one box and saved me huge on international shipping."</p>
+                <h4>— Raj P.</h4>
+                <span>Online reseller</span>
+              </div>
+              <div class="feedback-card">
+                <p class="feedback-text">"Excellent communication and real-time updates. Finally I can buy from Alibaba without stress. Highly recommended!"</p>
+                <h4>— Sarah J.</h4>
+                <span>Startup founder</span>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn next-btn" aria-label="Next">❯</button>
+        </div>
+
+        <!-- Leave new feedback form -->
+        <div class="leave-feedback">
+          <h3>Leave your feedback</h3>
+          <form id="feedbackForm">
+            <div class="inline-feedback-group">
+              <input type="text" id="feedbackName" placeholder="Your name" required>
+              <textarea id="feedbackComment" placeholder="Share your experience with our buying & shipping service..." rows="2" required></textarea>
+              <button type="submit" class="btn-primary small">Submit review</button>
+            </div>
+            <div id="feedbackSubmitMsg" class="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>🛒 GlobalCart Assist</h3>
+        <p>Bridging e-commerce gaps — we buy, you relax. Ship worldwide from eBay & Alibaba.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Stay updated</h4>
+        <p>Get tips on e-commerce savings & shipping</p>
+        <div class="newsletter-input">
+          <input type="email" id="newsletterEmail" placeholder="Your email">
+          <button id="newsletterBtn" class="btn-outline-light">Subscribe</button>
+        </div>
+        <div id="newsMsg" class="news-feedback"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 GlobalCart Assist — Your personal e‑commerce concierge. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

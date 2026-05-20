@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GeoIntel Solutions — Digital Storefront</title>
+    <link rel="stylesheet" href="assets/css/site.css">
+<!-- env.js is generated from .env (run `node generate-env.js`) -->
+<script src="assets/js/env.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a class="nav-brand" href="#">
+    <div class="globe-orb">🌍</div>
+    <div class="brand-name">Geo<em>Intel</em></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#solutions">Solutions</a></li>
+    <li><a href="#map">Map Data</a></li>
+    <li><a href="#dashboard">Dashboard</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a class="btn-ghost" href="#dashboard">Sign In</a>
+    <button class="btn-solid">Request Demo →</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-bg-globe"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-ring-2"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow"><div class="eyebrow-dot"></div>Geospatial Intelligence · Zambia & Africa</div>
+    <h1 class="hero-h1">
+      Earth Data.<br>
+      <span class="accent">Intelligent.</span><br>
+      Actionable.
+    </h1>
+    <p class="hero-p">
+      GeoIntel Solutions transforms satellite imagery, drone surveys, and IoT sensor networks into precision insights for agriculture, disaster management, and urban planning across Africa.
+    </p>
+    <div class="hero-actions">
+      <button class="cta-primary">🚀 Start Your Project</button>
+      <button class="cta-secondary">📊 View Live Map Demo</button>
+    </div>
+    <div class="hero-trust">
+      <span class="trust-label">Powered by</span>
+      <div class="trust-logos">
+        <span class="trust-pill">Google Cloud</span>
+        <span class="trust-pill">Google Maps API</span>
+        <span class="trust-pill">AI / ML</span>
+        <span class="trust-pill">PostgreSQL</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-row">
+    <div class="stat"><div class="stat-num">3</div><div class="stat-text">Data Sources Integrated</div></div>
+    <div class="stat"><div class="stat-num">98%</div><div class="stat-text">Mapping Accuracy</div></div>
+    <div class="stat"><div class="stat-num">40+</div><div class="stat-text">Projects Delivered</div></div>
+    <div class="stat"><div class="stat-num">&#60;5s</div><div class="stat-text">Insight Load Time</div></div>
+    <div class="stat"><div class="stat-num">GCP</div><div class="stat-text">Cloud Infrastructure</div></div>
+  </div>
+</div>
+
+<!-- SOLUTIONS -->
+<section class="section" id="solutions">
+  <p class="section-eyebrow">What We Do</p>
+  <h2 class="section-h2">Built for Real-World Challenges</h2>
+  <p class="section-sub">From crop yield forecasting to flood risk mapping — GeoIntel delivers clarity where it counts most.</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="svc-emoji">🌾</span>
+      <div class="svc-name">Precision Agriculture</div>
+      <div class="svc-desc">NDVI crop health monitoring, soil moisture analysis, and AI-powered yield forecasting across large-scale farmland.</div>
+      <span class="svc-badge">Satellite + Drone</span>
+    </div>
+    <div class="service-card">
+      <span class="svc-emoji">🌊</span>
+      <div class="svc-name">Disaster Management</div>
+      <div class="svc-desc">Real-time flood zone mapping, drought prediction, and wildfire risk assessment with early warning systems.</div>
+      <span class="svc-badge">IoT Sensors + AI</span>
+    </div>
+    <div class="service-card">
+      <span class="svc-emoji">🏙️</span>
+      <div class="svc-name">Urban Planning</div>
+      <div class="svc-desc">Land-use change detection, infrastructure mapping, and spatial analysis for city developers and planners.</div>
+      <span class="svc-badge">GIS + Remote Sensing</span>
+    </div>
+    <div class="service-card">
+      <span class="svc-emoji">📊</span>
+      <div class="svc-name">Insight Exports</div>
+      <div class="svc-desc">Multi-format data export: professional PDF reports, GeoJSON map layers, and CSV datasets ready for stakeholders.</div>
+      <span class="svc-badge">PDF / GeoJSON / CSV</span>
+    </div>
+    <div class="service-card">
+      <span class="svc-emoji">🤖</span>
+      <div class="svc-name">AI/ML Analytics</div>
+      <div class="svc-desc">Predictive modeling engines trained on geospatial data for proactive — not reactive — decision making.</div>
+      <span class="svc-badge">Google Cloud AI</span>
+    </div>
+    <div class="service-card">
+      <span class="svc-emoji">🗺️</span>
+      <div class="svc-name">Live Map Portal</div>
+      <div class="svc-desc">Client-facing interactive map dashboards powered by Google Maps API with real-time data overlays.</div>
+      <span class="svc-badge">Google Maps API</span>
+    </div>
+  </div>
+</section>
+
+<!-- MAP SECTION -->
+<section class="map-section" id="map">
+  <p class="section-eyebrow">Live Map Data</p>
+  <h2 class="section-h2">See Every Project. In Real Time.</h2>
+  <p class="section-sub">Our Google Maps API integration puts active project locations, sensor data, and satellite overlays on one interactive map.</p>
+  <div class="map-container">
+    <div class="map-placeholder-bg">
+      <!-- Simulated map pins -->
+      <div class="map-pin" style="top:38%;left:42%" title="Lusaka Urban Mapping">📍</div>
+      <div class="map-pin" style="top:22%;left:48%;animation-delay:0.2s" title="Copperbelt Crop Monitor">📍</div>
+      <div class="map-pin" style="top:30%;left:68%;animation-delay:0.4s" title="Petauke Flood Zone">📍</div>
+      <div class="map-pin" style="top:55%;left:30%;animation-delay:0.6s" title="Southern Province Survey">📍</div>
+      <div class="map-center-label">
+        <div style="font-size:13px;margin-bottom:8px">🌍 Google Maps API Integration</div>
+        <div style="font-size:11px;opacity:0.6">Add your API key to activate the live map</div>
+      </div>
+      <div class="map-live-badge">
+        <div class="live-dot"></div>
+        <span style="font-size:11px;color:#4CAF50">4 Active Projects</span>
+      </div>
+      <div class="map-api-badge">
+        <div class="map-api-title">Zambia Coverage</div>
+        <div class="map-api-sub">-13.1339°S, 27.8493°E</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DASHBOARD: replaced with JS-mounted component -->
+<section id="dashboard">
+  <div id="dashboard-root"></div>
+</section>
+
+<!-- PAYMENT / CTA -->
+<section class="payment-section" id="pricing">
+  <div class="payment-card">
+    <div>
+      <p class="section-eyebrow">Project Commitment Model</p>
+      <h2 class="payment-h2">Clarity Starts at 40%</h2>
+      <p class="payment-p">Our model ensures mutual commitment from day one. A 40% down payment activates your project, triggers data collection, and unlocks your dedicated client dashboard.</p>
+      <ul class="payment-steps">
+        <li><div class="step-num">1</div>Submit project brief & scope requirements</li>
+        <li><div class="step-num">2</div>Receive detailed proposal & milestone map</li>
+        <li><div class="step-num">3</div>40% payment activates your project</li>
+        <li><div class="step-num">4</div>Access your live dashboard & track progress</li>
+        <li><div class="step-num">5</div>Final delivery + remaining 60% settlement</li>
+      </ul>
+    </div>
+    <div class="payment-visual">
+      <div class="payment-progress-label">
+        <span>Project Funding Progress</span>
+        <span style="color:#42A5F5">40% Committed</span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+      <ul class="milestone-list">
+        <li class="milestone-item">
+          <span class="milestone-check">✅</span>
+          <span class="milestone-text done">Project brief submitted</span>
+        </li>
+        <li class="milestone-item">
+          <span class="milestone-check">✅</span>
+          <span class="milestone-text done">Proposal accepted</span>
+        </li>
+        <li class="milestone-item">
+          <span class="milestone-check">✅</span>
+          <span class="milestone-text done">40% down payment received</span>
+        </li>
+        <li class="milestone-item">
+          <span class="milestone-pending">⏳</span>
+          <span class="milestone-text">Data collection in progress</span>
+        </li>
+        <li class="milestone-item">
+          <span class="milestone-pending">⏳</span>
+          <span class="milestone-text">Final report & delivery</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+      <div class="globe-orb" style="width:30px;height:30px;font-size:17px">🌍</div>
+      <div class="brand-name" style="font-size:16px">Geo<em>Intel</em></div>
+    </div>
+    <p>Transforming Earth's data into decisions for Africa's future.</p>
+    <p style="margin-top:10px;font-size:11px">Mukuba UniPod · Kitwe, Zambia</p>
+  </div>
+  <div class="footer-col">
+    <h4>Solutions</h4>
+    <a href="#">Precision Agriculture</a>
+    <a href="#">Disaster Management</a>
+    <a href="#">Urban Planning</a>
+    <a href="#">Data Exports</a>
+  </div>
+  <div class="footer-col">
+    <h4>Platform</h4>
+    <a href="#">Client Dashboard</a>
+    <a href="#">Live Map Portal</a>
+    <a href="#">API Documentation</a>
+    <a href="#">GitHub Repository</a>
+  </div>
+  <div class="footer-col">
+    <h4>Company</h4>
+    <a href="#">About GeoIntel</a>
+    <a href="#">Case Studies</a>
+    <a href="#">Contact Us</a>
+    <a href="#">DFL Hackathon</a>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <span>© 2026 GeoIntel Solutions Limited · All rights reserved</span>
+  <span>Built with <span>♥</span> at Mukuba UniPod · DFL Developer Hackathon</span>
+</div>
+
+<!-- SPONSORS & COLLABORATION -->
+<section class="sponsors-section">
+  <div class="sponsors-container">
+    <p class="section-eyebrow">In Partnership With</p>
+    <h2 class="section-h2">Sponsors & Collaboration</h2>
+    <p class="section-sub">This project is developed as part of the DFL Web Development Course, held at American Corner Kitwe in partnership with the 250 Freedom Initiative, Mukuba University Pod, and the United Nations Development Programme (UNDP).</p>
+    
+    <div class="sponsors-grid">
+      <div class="sponsor-card">
+        <div class="sponsor-logo-placeholder">
+          <img src="https://via.placeholder.com/180x80?text=DFL+Logo" alt="DFL - Digital Future Lab" title="DFL - Digital Future Lab">
+        </div>
+        <div class="sponsor-name">DFL Web Dev Course</div>
+        <div class="sponsor-desc">Digital skills training and innovation hub for developers across Africa.</div>
+      </div>
+      
+      <div class="sponsor-card">
+        <div class="sponsor-logo-placeholder">
+          <img src="https://via.placeholder.com/180x80?text=American+Corner" alt="American Corner Kitwe" title="American Corner Kitwe">
+        </div>
+        <div class="sponsor-name">American Corner Kitwe</div>
+        <div class="sponsor-desc">Community hub for cultural exchange and digital learning initiatives.</div>
+      </div>
+      
+      <div class="sponsor-card">
+        <div class="sponsor-logo-placeholder">
+          <img src="https://via.placeholder.com/180x80?text=250+Freedom" alt="250 Freedom Initiative" title="250 Freedom Initiative">
+        </div>
+        <div class="sponsor-name">250 Freedom Initiative</div>
+        <div class="sponsor-desc">Empowering youth with digital tools and entrepreneurial opportunities.</div>
+      </div>
+      
+      <div class="sponsor-card">
+        <div class="sponsor-logo-placeholder">
+          <img src="https://via.placeholder.com/180x80?text=Mukuba+UniPod" alt="Mukuba UniPod" title="Mukuba UniPod">
+        </div>
+        <div class="sponsor-name">Mukuba UniPod</div>
+        <div class="sponsor-desc">Innovation lab fostering tech entrepreneurship and research excellence.</div>
+      </div>
+      
+      <div class="sponsor-card">
+        <div class="sponsor-logo-placeholder">
+          <img src="https://via.placeholder.com/180x80?text=UNDP" alt="United Nations Development Programme" title="United Nations Development Programme">
+        </div>
+        <div class="sponsor-name">UNDP Zambia</div>
+        <div class="sponsor-desc">Supporting sustainable development through technology and innovation.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
