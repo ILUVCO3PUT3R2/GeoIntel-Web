@@ -1,3 +1,27 @@
+/* Sponsors carousel overrides */
+.sponsors-carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+}
+.sponsors-carousel {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: stretch;
+}
+.sponsors-carousel .sponsor-card {
+  min-width: 260px;
+  max-width: 340px;
+  margin: 0 auto;
+  display: none;
+}
+.sponsors-carousel .sponsor-card:first-child {
+  display: flex;
+}
 /* SPONSORS & COLLABORATION */
 .sponsors-section {
   width: min(1180px, 100%);

@@ -241,50 +241,68 @@
     <h2 class="section-h2">Sponsors & Collaboration</h2>
     <p class="section-sub">This project is developed as part of the DFL Web Development Course, held at American Corner Kitwe in partnership with the 250 Freedom Initiative, Mukuba University Pod, and the United Nations Development Programme (UNDP).</p>
     
-    <div class="sponsors-grid">
-      <div class="sponsor-card">
-        <div class="sponsor-logo-placeholder">
-          <img src="https://via.placeholder.com/180x80?text=DFL+Logo" alt="DFL - Digital Future Lab" title="DFL - Digital Future Lab">
+    <div class="sponsors-carousel-wrapper">
+      <div class="sponsors-carousel" id="sponsors-carousel">
+        <div class="sponsor-card">
+          <div class="sponsor-logo-placeholder">
+            <img src="https://via.placeholder.com/180x80?text=DFL+Logo" alt="DFL - Digital Future Lab" title="DFL - Digital Future Lab">
+          </div>
+          <div class="sponsor-name">DFL Web Dev Course</div>
+          <div class="sponsor-desc">Digital skills training and innovation hub for developers across Africa.</div>
         </div>
-        <div class="sponsor-name">DFL Web Dev Course</div>
-        <div class="sponsor-desc">Digital skills training and innovation hub for developers across Africa.</div>
-      </div>
-      
-      <div class="sponsor-card">
-        <div class="sponsor-logo-placeholder">
-          <img src="https://via.placeholder.com/180x80?text=American+Corner" alt="American Corner Kitwe" title="American Corner Kitwe">
+        <div class="sponsor-card">
+          <div class="sponsor-logo-placeholder">
+            <img src="https://via.placeholder.com/180x80?text=American+Corner" alt="American Corner Kitwe" title="American Corner Kitwe">
+          </div>
+          <div class="sponsor-name">American Corner Kitwe</div>
+          <div class="sponsor-desc">Community hub for cultural exchange and digital learning initiatives.</div>
         </div>
-        <div class="sponsor-name">American Corner Kitwe</div>
-        <div class="sponsor-desc">Community hub for cultural exchange and digital learning initiatives.</div>
-      </div>
-      
-      <div class="sponsor-card">
-        <div class="sponsor-logo-placeholder">
-          <img src="https://via.placeholder.com/180x80?text=250+Freedom" alt="250 Freedom Initiative" title="250 Freedom Initiative">
+        <div class="sponsor-card">
+          <div class="sponsor-logo-placeholder">
+            <img src="https://via.placeholder.com/180x80?text=250+Freedom" alt="250 Freedom Initiative" title="250 Freedom Initiative">
+          </div>
+          <div class="sponsor-name">250 Freedom Initiative</div>
+          <div class="sponsor-desc">Empowering youth with digital tools and entrepreneurial opportunities.</div>
         </div>
-        <div class="sponsor-name">250 Freedom Initiative</div>
-        <div class="sponsor-desc">Empowering youth with digital tools and entrepreneurial opportunities.</div>
-      </div>
-      
-      <div class="sponsor-card">
-        <div class="sponsor-logo-placeholder">
-          <img src="https://via.placeholder.com/180x80?text=Mukuba+UniPod" alt="Mukuba UniPod" title="Mukuba UniPod">
+        <div class="sponsor-card">
+          <div class="sponsor-logo-placeholder">
+            <img src="https://via.placeholder.com/180x80?text=Mukuba+UniPod" alt="Mukuba UniPod" title="Mukuba UniPod">
+          </div>
+          <div class="sponsor-name">Mukuba UniPod</div>
+          <div class="sponsor-desc">Innovation lab fostering tech entrepreneurship and research excellence.</div>
         </div>
-        <div class="sponsor-name">Mukuba UniPod</div>
-        <div class="sponsor-desc">Innovation lab fostering tech entrepreneurship and research excellence.</div>
-      </div>
-      
-      <div class="sponsor-card">
-        <div class="sponsor-logo-placeholder">
-          <img src="https://via.placeholder.com/180x80?text=UNDP" alt="United Nations Development Programme" title="United Nations Development Programme">
+        <div class="sponsor-card">
+          <div class="sponsor-logo-placeholder">
+            <img src="https://via.placeholder.com/180x80?text=UNDP" alt="United Nations Development Programme" title="United Nations Development Programme">
+          </div>
+          <div class="sponsor-name">UNDP Zambia</div>
+          <div class="sponsor-desc">Supporting sustainable development through technology and innovation.</div>
         </div>
-        <div class="sponsor-name">UNDP Zambia</div>
-        <div class="sponsor-desc">Supporting sustainable development through technology and innovation.</div>
       </div>
     </div>
   </div>
 </section>
 
 <script type="module" src="assets/js/main.js"></script>
+<script>
+// Sponsors carousel/slider logic
+document.addEventListener('DOMContentLoaded', function() {
+  const carousel = document.getElementById('sponsors-carousel');
+  if (!carousel) return;
+  const cards = carousel.children;
+  let current = 0;
+  const total = cards.length;
+  function showCard(idx) {
+    for (let i = 0; i < total; i++) {
+      cards[i].style.display = i === idx ? 'flex' : 'none';
+    }
+  }
+  showCard(current);
+  setInterval(() => {
+    current = (current + 1) % total;
+    showCard(current);
+  }, 5000);
+});
+</script>
 </body>
 </html>
