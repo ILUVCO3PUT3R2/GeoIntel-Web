@@ -24,8 +24,11 @@ for (const line of lines) {
   obj[key] = val;
 }
 
+// Only expose non-sensitive, client-side keys to the browser.
 const publicKeys = {
-  GOOGLE_MAPS_API_KEY: obj.GOOGLE_MAPS_API_KEY || ''
+  GOOGLE_MAPS_API_KEY: obj.GOOGLE_MAPS_API_KEY || '',
+  // OAuth client ID is safe to expose to the browser (used by Google Sign-In flows).
+  GOOGLE_OAUTH_CLIENT_ID: obj.GOOGLE_OAUTH_CLIENT_ID || ''
 };
 
 const content = `// Generated from .env — do NOT commit this file to version control.
