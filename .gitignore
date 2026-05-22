@@ -1,0 +1,17 @@
+# Environment files
+.env
+GeoIntel/website/.env
+
+# Generated browser env
+assets/js/env.js
+GeoIntel/website/assets/js/env.js
+
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# IDE files
+.vscode/

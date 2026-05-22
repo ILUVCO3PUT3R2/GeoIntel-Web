@@ -67,7 +67,9 @@ export default function MapView() {
   // Load the Google Maps API using your key from .env
   const { isLoaded, loadError } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
+    // Prefer the generated browser env (window.__ENV__) for static sites,
+    // fall back to the React env var if present during a build.
+    googleMapsApiKey: (typeof window !== 'undefined' && window.__ENV && window.__ENV.GOOGLE_MAPS_API_KEY) || process.env.REACT_APP_GOOGLE_MAPS_API_KEY
   });
 
   const onLoad = useCallback((map) => {
